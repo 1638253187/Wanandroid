@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/vtltab"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorGlayw"
+        android:outlineAmbientShadowColor="@color/colorWhite_dao"
+        android:outlineSpotShadowColor="@color/colorWhite_xiangmu"
+        app:indicator_gravity="left"
+        app:indicator_width="1dp"
+        app:tab_height="50dp"
+        app:tab_mode="scrollable" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/vtltab" />
+</RelativeLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#BEBCC5</color>
+    <color name="colorYelle">#F3E682</color>
+    <color name="colorGreen">#8C9190</color>
+    <color name="colorGreen2">#8BC34A</color>
+    <color name="colorGreen3">#03E7A7</color>
+    <color name="zi">#DC9C27B0</color>
+    <color name="colorWhite">#3F3A3A</color>
+    <color name="colorWhite_bnv">#73757A</color>
+    <color name="colorWhite_setiing">#ADADAF</color>
+    <color name="colorWhite_bian">#F1F1F3</color>
+    <color name="colorWhite_fla">#fff</color>
+    <color name="colorWhite_xiangmu">#3F3A3A</color>
+    <color name="colorWhite_dao">#CCC7C7</color>
+    <color name="colorhomeWhite" tools:ignore="MissingDefaultResource">#fff</color>
+    <color name="colororj">#FF5722</color>
+    <color name="colorWhiteF1FAE8">#B6B9B6</color>
+    <color name="colorBlack">#D5D1D1</color>
+    <color name="color_text_white">#fff</color>
+    <color name="colorGlayw">#A1D1D0D0</color>
+    <color name="colore7e7">#e7e7e7</color>
+    <color name="color6363">#636363</color>
+    <color name="colorred">#FF5722</color>
+    <color name="colorbubu">#3E4666</color>
+    <color name="colorzi">#C3B5D5</color>
+
+    <color name="fab_bg">#6b6d72</color>
+    <color name="drawer_item_bg_p">#6b6d72</color>
+    <color name="drawer_item_bg_n">#3e3d3d</color>
+    <color name="news_unread">#999999</color>
+    <color name="news_read">#6b6d72</color>
+    <color name="bg_blue">#A1D1D0D0</color>
+    <color name="comment_text">#dfd8d8</color>
+    <color name="setting_text">#F10606</color>
+    <color name="comment_reply">#606266</color>
+    <color name="comment_btn">#606266</color>
+    <color name="comment_line">#202124</color>
+    <color name="comment_at">#3289b3</color>
+    <color name="gold_title">#6B6D72</color>
+    <color name="colorPrimaryOverlay">#838282</color>
+    <color name="delete_text">#C3C5C9</color>
+    <color name="bg_white">#73757A</color>
+    <color name="deep_grey">#37383b</color>
+    <color name="dialog_background">#0F1010</color>
+    <color name="yellow">#FF9800</color>
+    <color name="search_grey_gone">#cccccc</color>
+    <color name="search_grey_gone1">#8F8D8D</color>
+    <color name="search_grey">#ffffff</color>
+    <color name="colorWhite_touch">#777575</color>
+    <color name="main_status_bar_blue">#333333</color>
+    <color name="search_status_bar_white">#333333</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorText">#F7F1F1</color>
+    <color name="grey_bg">#EDEDED</color>
+    <color name="while_most_color">#e4e4e4</color>
+    <!--通用触摸背景色-->
+    <color name="common_touch_bg">#E3E3E3</color>
+    <!--通用背景色-->
+    <color name="common_bg">@color/colorWhite</color>
+</resources>

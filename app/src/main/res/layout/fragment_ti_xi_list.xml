@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bbb"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TiXiListFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:alpha="0.9"
+        android:layout_height="wrap_content">
+
+        <com.scwang.smartrefresh.layout.header.BezierRadarHeader
+            android:id="@+id/smart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlPrimaryColor="@color/colorBlue" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:alpha="0.9"
+            android:background="@color/colorBackground"
+            android:layout_height="match_parent" />
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/colorWhite"
+            app:srlAnimatingColor="@color/colorBlue"
+            app:srlNormalColor="@color/colorWhite" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

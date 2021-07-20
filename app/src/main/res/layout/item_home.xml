@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/qb_px_16"
+    android:paddingTop="@dimen/qb_px_10"
+    android:padding="@dimen/qb_px_10"
+    android:background="@color/colorWhite_touch"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:padding="@dimen/qb_px_20">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/qb_px_24"
+            android:layout_height="@dimen/qb_px_24"
+            android:layout_margin="@dimen/qb_px_3"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_5"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:layout_toRightOf="@+id/iv_user"
+            android:gravity="center"
+            android:text="xiaoyang"
+            android:textColor="@color/delete_text"
+            android:textSize="@dimen/qb_px_15" />
+
+        <TextView
+            android:id="@+id/tv_superChapterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_3"
+            android:layout_marginRight="@dimen/qb_px_5"
+            android:layout_toLeftOf="@+id/tv_chapterName"
+            android:text="问答 "
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/tv_chapterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/qb_px_3"
+            android:layout_marginRight="@dimen/qb_px_8"
+            android:text="官方"
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_user"
+            android:gravity="center"
+            android:text="每日一问，很多时候我们说'android16。6ms刷新'一次屏幕'正确嘛？'"
+            android:textColor="@color/delete_text"
+            android:textSize="15.2sp" />
+
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_width="@dimen/qb_px_24"
+            android:layout_height="@dimen/qb_px_24"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:src="@drawable/ic_love" />
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="@dimen/qb_px_24"
+            android:layout_height="@dimen/qb_px_24"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/qb_px_35"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:src="@drawable/ic_time" />
+
+        <TextView
+            android:id="@+id/tv_niceDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/qb_px_5"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/qb_px_12"
+            android:layout_toRightOf="@id/iv_time"
+            android:text="2天前"
+            android:textSize="@dimen/qb_px_15" />
+
+        <ImageView
+            android:id="@+id/iv_new"
+            android:layout_width="@dimen/qb_px_26"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_below="@+id/tv_title"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:layout_marginRight="@dimen/qb_px_8"
+            android:src="@drawable/new_tu" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

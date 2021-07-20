@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.fragment.VideoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13.5dp"
+            android:src="@mipmap/ueo" />
+
+        <RelativeLayout
+            android:id="@+id/re_two"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/editview">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="6.5dp"
+                android:background="@mipmap/skin_searchbar_icon_theme_version2" />
+
+            <EditText
+                android:id="@+id/et_shou"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="搜索: 宸汐缘  真香"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_emile"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/uen" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_95" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.scwang.smartrefresh.header.DeliveryHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

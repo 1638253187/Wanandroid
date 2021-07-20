@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/slb"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/sla"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skj"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skk"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skl"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skm"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skn"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/sko"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skp"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skq"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/skq"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skr"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/sks"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skt"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/sku"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skv"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skw"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skx"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/sky"
+        android:duration="200" />
+   <item
+        android:drawable="@drawable/skz"
+        android:duration="200" />
+
+</animation-list>

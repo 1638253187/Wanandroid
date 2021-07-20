@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">QQ</string>
+    <string name="nv_open">开启</string>
+    <string name="nv_close">关闭</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nourl">你好</string>
+    <string name="loading">正在加载数据</string>
+    <string name="just">刚刚</string>
+    <string name="just_15">15分钟前</string>
+    <string name="just_30">30分钟前</string>
+    <string name="just_1hour">一小时前</string>
+    <string name="An_hour_ago">小时前</string>
+    <string name="Days_ago">天前</string>
+</resources>

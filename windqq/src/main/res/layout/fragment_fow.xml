@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.FowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="13.5dp"
+                android:src="@mipmap/ueo" />
+
+            <RelativeLayout
+                android:id="@+id/re_two"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/editview">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="6.5dp"
+                    android:background="@mipmap/skin_searchbar_icon_theme_version2" />
+
+                <EditText
+                    android:id="@+id/et_shou"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="搜索: 宸汐缘  真香"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_emile"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/uen" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="-10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlv_test_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_130">
+
+                <TextView
+                    android:id="@+id/tv_test_one"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_13"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_test_one"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:text="香港太古城发生严重伤人事件，特区政府、警察强烈谴责"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/iv_test_one"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:src="@mipmap/bahb" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_test_one"
+                    android:layout_width="@dimen/qb_px_125"
+                    android:layout_height="@dimen/qb_px_95"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/xinwen_two" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlv_test_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_130"
+                android:layout_marginTop="@dimen/qb_px_5">
+
+                <TextView
+                    android:id="@+id/tv_test_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_13"
+                    android:layout_toLeftOf="@+id/iv_test_two"
+                    android:letterSpacing="0.05"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:text="经常玩手机有什么危害(皮疹、皱纹、痤疮)看完你还敢熬夜吗？ "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/iv_test_two"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:src="@mipmap/bahb" />
+
+                <ImageView
+                    android:layout_width="@dimen/qb_px_20"
+                    android:layout_height="@dimen/qb_px_20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/qb_px_13"
+                    android:layout_marginTop="@dimen/qb_px_10"
+                    android:src="@drawable/hot" />
+
+                <ImageView
+                    android:id="@+id/iv_test_two"
+                    android:layout_width="@dimen/qb_px_125"
+                    android:layout_height="@dimen/qb_px_95"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/xinwen_three" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlv_test_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_130"
+                android:layout_marginTop="@dimen/qb_px_5">
+
+                <TextView
+                    android:id="@+id/tv_test_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_13"
+                    android:layout_centerVertical="true"
+                    android:letterSpacing="0.05"
+                    android:layout_toLeftOf="@+id/iv_test_three"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:text="因洞穴救援一夜成名 泰 '睡美人洞' 打造成景区重开 "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/iv_test_three"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:src="@mipmap/bahb" />
+
+                <ImageView
+                    android:id="@+id/iv_test_three"
+                    android:layout_width="@dimen/qb_px_125"
+                    android:layout_height="@dimen/qb_px_95"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/xinwen_one" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlv_test_fow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_5">
+
+                <LinearLayout
+                    android:id="@+id/lin_fow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/qb_px_80"
+                        android:layout_margin="@dimen/qb_px_5"
+                        android:layout_weight="1"
+                        android:src="@drawable/xinwen_fow_one" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/qb_px_5"
+                        android:layout_height="@dimen/qb_px_80"
+                        android:src="@drawable/xinwen_fow_two" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/qb_px_5"
+                        android:layout_height="@dimen/qb_px_80"
+                        android:src="@drawable/xinwen_fow_three" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_test_fow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/qb_px_10"
+                    android:layout_marginRight="@dimen/qb_px_10"
+                    android:letterSpacing="0.05"
+                    android:layout_marginBottom="@dimen/qb_px_10"
+                    android:layout_below="@+id/lin_fow"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:text="逃票打砸警车！美国纽约爆发大规模示威，美：这是和平示威"
+                />
+
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlv_test_five"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_130"
+                android:layout_marginTop="@dimen/qb_px_5">
+
+                <TextView
+                    android:id="@+id/tv_test_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:letterSpacing="0.05"
+                    android:layout_marginTop="@dimen/qb_px_13"
+                    android:layout_toLeftOf="@+id/iv_test_five"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:text="香港前天文台台长“舌战”暴徒力还香港警方清白"                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/iv_test_five"
+                    android:layout_margin="@dimen/qb_px_15"
+                    android:src="@mipmap/bahb" />
+
+                <ImageView
+                    android:id="@+id/iv_test_five"
+                    android:layout_width="@dimen/qb_px_125"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/qb_px_95"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/xiwnen_test_six" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    </LinearLayout>
+

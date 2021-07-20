@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.XmListFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <com.scwang.smartrefresh.header.FunGameBattleCityHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/colorBlue"
+            app:fghBackColor="@color/colorBlue"
+            app:fghLeftColor="@color/colororj"
+            app:fghMaskTextBottom="开始打坦克"
+            app:fghMaskTextTop="这是头部"
+            app:fghMaskTextTopPull="下拉开始打飞机"
+            app:fghMaskTextTopRelease="准备好了嘛"
+            app:fghMiddleColor="@color/colorred"
+            app:fghRightColor="@color/colorGreen3"
+            app:fghTextGameOver="你完了！！"
+            app:fghTextLoading="敌军还有五秒到达战场"
+            app:fghTextLoadingFinished="全军出击"
+            app:layout_srlBackgroundColor="@color/colorBlue" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</RelativeLayout>

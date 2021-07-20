@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGray2">#FC6F6E6E</color>
+    <color name="colorWhite">#FBFCFB</color>
+    <color name="colorBlack">#010E01</color>
+    <color name="colorGray">#BFC7CAC6</color>
+    <color name="colorGray_two">#40C7CAC6</color>
+    <color name="colorBlue">#F21F62F0</color>
+    <color name="colorStatBar">#BDBBBB</color>
+    <color name="aaa">#E5E7DC</color>
+    <color name="bbb">#EEEE61</color>
+    <color name="red">#DFF44336</color>
+    <color name="orj">#DFC7B022</color>
+    <color name="aad">#14bababa</color>
+
+    <color name="transparent_half">#a0000000</color>
+    <color name="AllBack">#EAEAEA</color>
+
+    <color name="colorToolbar">#15B5DB</color>
+    <color name="white">#ffffff</color>
+    <color name="ViewBack">#d9d9d9</color>
+    <color name="bottomBack">#FFFFFF</color>
+    <color name="EditBack">#fff</color>
+    <color name="text_black">#ff000000</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+</resources>

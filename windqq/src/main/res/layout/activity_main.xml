@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_28"
+            android:background="#1BA4F9" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-3dp"
+            android:background="#1BA4F9"
+            app:title=" "
+             >
+            <ImageView
+                android:id="@+id/iv_header_tu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/lp"
+                />
+            <ImageView
+                android:id="@+id/iv_header_tu2"
+                android:layout_width="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="13dp"
+                android:src="@mipmap/rqg"
+                />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="120sp"
+                />
+            <ImageView
+                android:id="@+id/iv_wifi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="83dp"
+                android:background="@drawable/anims_two"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.example.windqq.util.ScrollableViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab"
+     />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabRippleColor="@color/colorWhite"
+            app:tabTextColor="@color/colorGray"
+            app:tabSelectedTextColor="@color/colorBlack"
+            android:background="@color/colorGray_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_60"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/colorBlue"
+        app:itemTextColor="@color/colorBlue"
+        app:menu="@menu/menu" />
+</android.support.v4.widget.DrawerLayout>

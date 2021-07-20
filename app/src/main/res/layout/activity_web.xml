@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.Web">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_60">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_60"
+            android:background="@color/colorBlue">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_50">
+
+                <com.example.wanandroid.util.imageutil.CircleImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/qb_px_25"
+                    android:layout_height="@dimen/qb_px_25"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back_white_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="每日一问 今天聊一下Gradel"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/qb_px_15" />
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="@dimen/qb_px_25"
+                    android:layout_height="@dimen/qb_px_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/qb_px_45"
+                    android:src="@drawable/selector_toolbar_like" />
+
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="@dimen/qb_px_25"
+                    android:layout_height="@dimen/qb_px_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/qb_px_10"
+                    android:src="@mipmap/three_lin" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

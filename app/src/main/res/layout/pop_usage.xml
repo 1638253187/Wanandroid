@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_640"
+    android:layout_margin="@dimen/qb_px_20"
+    android:background="@color/colorWhite_touch"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/qb_px_360"
+        android:layout_height="@dimen/qb_px_650"
+        android:background="@color/colorWhite_touch">
+
+        <RelativeLayout
+            android:id="@+id/re_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_60">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_20"
+                android:src="@drawable/ic_arrow_back_grey_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="常用网站"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re_one"
+            android:layout_marginBottom="@dimen/qb_px_15"
+            android:text="＿_＿_＿_＿__＿___＿_＿____＿__＿_＿_＿____＿__＿＿＿_＿___＿＿＿__＿＿_＿_＿_＿_＿＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿_＿_＿＿_＿_＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+            android:textColor="@color/colorGlayw"
+            android:textSize="@dimen/qb_px_4" />
+
+        <RelativeLayout
+            android:id="@+id/re_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_550"
+            android:layout_below="@+id/re_one"
+            android:layout_marginLeft="@dimen/qb_px_20"
+            android:layout_marginTop="@dimen/qb_px_20"
+            android:layout_marginRight="@dimen/qb_px_20"
+            android:background="@color/colorWhite_touch">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite_touch" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_40"
+        android:background="@color/colorWhite_touch" />
+</LinearLayout>

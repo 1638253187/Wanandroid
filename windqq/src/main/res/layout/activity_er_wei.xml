@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ErWei">
+
+    <ImageView
+        android:id="@+id/iv_erwei1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="55dp"
+        android:background="@mipmap/erweima" />
+
+    <RelativeLayout
+        android:id="@+id/re_one"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/iv_erwei1"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@color/colorGray">
+
+        <ImageView
+            android:id="@+id/iv_tou"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/news_tu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_tou"
+            android:text="0.20%"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:layout_toRightOf="@id/iv_tou"
+            android:text="扫一扫二维码，加我QQ，只能臭狗加。"
+            android:textColor="@color/colorGray2"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/re_one"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bt_erwei"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_one"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/select_erwei" />
+
+    <Button
+        android:id="@+id/bt_erwei_pay"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_one"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/select_pay" />
+
+    <Button
+        android:id="@+id/bt_erwei_sao"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_one"
+        android:layout_alignRight="@+id/re_one"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/select_sao" />
+</RelativeLayout>

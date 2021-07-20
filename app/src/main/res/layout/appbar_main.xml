@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <com.wikikii.bannerlib.banner.view.BannerBgContainer
+        android:id="@+id/banner_bg_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_120" />
+
+
+    <com.wikikii.bannerlib.banner.LoopLayout
+        android:id="@+id/loop_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:layout_height="@dimen/qb_px_150"
+        android:layout_gravity="bottom" />
+</android.support.design.widget.AppBarLayout>

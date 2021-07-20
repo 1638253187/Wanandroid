@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="50dp"
+    android:gravity="center"
+    android:backgroundTintMode="src_atop"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/review"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tv_dlsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="登录失败"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_zhmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.4dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_dlsb"
+            android:text="账号或者密码错误，请重新输入。"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_dl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_36"
+                android:text="确定"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/select_txt"
+                />
+
+    </RelativeLayout>
+</RelativeLayout>

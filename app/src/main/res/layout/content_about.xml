@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_us_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/qb_px_25"
+    tools:showIn="@layout/activity_about_us">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/qb_px_10">
+
+        <TextView
+            android:id="@+id/aboutVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/qb_px_16"
+            android:drawablePadding="@dimen/qb_px_8"
+            android:drawableTop="@mipmap/ic_launchers"
+            android:gravity="center"
+            android:text="@string/awesome_wan_android"
+            android:textAllCaps="false"
+            android:textColor="@color/comment_text_two"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/aboutContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/qb_px_16"
+            tools:text="@string/about_content"
+            android:textColor="@color/comment_text_two" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

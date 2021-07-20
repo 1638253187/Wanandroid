@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbubu"
+    android:orientation="vertical"
+    tools:context=".adapter.Zhuce">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/qb_px_10"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_130"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_140"
+        android:orientation="vertical"
+        android:padding="@dimen/qb_px_55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_height="@dimen/qb_px_50"
+                android:layout_weight="7"
+                android:background="@drawable/editviews"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/qb_px_18"
+                android:hint="邮箱/手机号"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/qb_px_10"
+                android:textColor="@color/colorWhite"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_yzm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                android:background="@drawable/editviews"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/qb_px_10"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_30"
+            android:background="@drawable/editviews"
+            android:drawableStart="@drawable/ic_register_password"
+            android:drawablePadding="@dimen/qb_px_18"
+            android:hint="输入密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/qb_px_10"
+            android:textColor="@color/colorWhite"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/et_pswagine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:background="@drawable/editviews"
+            android:drawableStart="@drawable/ic_register_password"
+            android:drawablePadding="@dimen/qb_px_18"
+            android:hint="确认密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/qb_px_10"
+            android:textColor="@color/colorWhite"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_zhuce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_45"
+            android:layout_marginTop="@dimen/qb_px_45"
+            android:background="@drawable/editviewbtn"
+            android:paddingLeft="@dimen/qb_px_10"
+            android:text="注册"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/qb_px_18" />
+    </LinearLayout>
+
+</LinearLayout>

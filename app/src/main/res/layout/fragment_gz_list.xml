@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rere"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.GzListFragment">
+    <RelativeLayout
+        android:id="@+id/re_one"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/qb_px_25"
+        android:layout_height="@dimen/qb_px_25"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/qb_px_26"
+        android:layout_marginBottom="@dimen/qb_px_5"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:background="@drawable/ic_search" />
+
+    <EditText
+        android:id="@+id/etshou"
+        android:layout_width="@dimen/qb_px_265"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:hint="凤航带你发现更多干货"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="@dimen/qb_px_12"
+        android:paddingLeft="@dimen/qb_px_31"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/qb_px_5"
+        android:layout_marginBottom="@dimen/qb_px_5"
+
+        android:textCursorDrawable="@drawable/solid_shape_bottom_line"
+        android:theme="@style/MyEditText" />
+
+    <Button
+        android:id="@+id/btn_sphar"
+        android:layout_width="@dimen/qb_px_65"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_marginTop="@dimen/qb_px_8"
+        android:layout_toRightOf="@+id/etshou"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/editview"
+        android:text="搜索"
+        android:layout_marginBottom="@dimen/qb_px_5"
+        android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_one">
+
+        <com.scwang.smartrefresh.layout.header.BezierRadarHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:outlineAmbientShadowColor="@color/colorBlue"
+            android:outlineSpotShadowColor="@color/colorBlue"
+            app:srlPrimaryColor="@color/colorBlue" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground" />
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/colorWhite"
+            app:srlAnimatingColor="@color/colorBlue"
+            app:srlNormalColor="@color/colorWhite" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#33CCCCCC"
+    tools:context=".ui.fragment.SetiingFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_huyan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/re_three"
+            android:background="@color/bg_blue"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/qb_px_10"
+            android:id="@+id/re_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:background="@drawable/editview_buttn">
+
+            <TextView
+                android:id="@+id/btn_huyan"
+                android:layout_width="@dimen/qb_px_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qb_px_50"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:layout_marginBottom="@dimen/qb_px_10"
+                android:background="@drawable/editview_buttn"
+                android:gravity="center"
+                android:padding="@dimen/qb_px_10"
+                android:text="护眼"
+                android:textColor="@color/colorGreen3"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/sw_itch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/qb_px_30"
+                android:layout_marginRight="@dimen/qb_px_40"
+                android:outlineAmbientShadowColor="@color/colorBlue"
+                android:outlineSpotShadowColor="@color/colorGreen"
+                android:shadowColor="@color/colorBlue"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOn="On" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_two"
+            android:layout_margin="@dimen/qb_px_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re_one"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:background="@drawable/editview_buttn">
+
+            <TextView
+                android:id="@+id/tv_DayNight"
+                android:layout_width="@dimen/qb_px_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qb_px_50"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:layout_marginBottom="@dimen/qb_px_10"
+                android:background="@drawable/editview_buttn"
+                android:gravity="center"
+                android:padding="@dimen/qb_px_10"
+                android:text="夜间"
+                android:textColor="@color/colorGreen3"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/st_DayNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/qb_px_30"
+                android:layout_marginRight="@dimen/qb_px_40"
+                android:outlineAmbientShadowColor="@color/colorBlue"
+                android:outlineSpotShadowColor="@color/colorGreen"
+                android:shadowColor="@color/colorBlue"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOn="On" />
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shezhi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_30"
+            android:text="其他设置"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:layout_marginLeft="@dimen/qb_px_12"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/qb_px_15"
+            android:layout_below="@+id/re_three"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/tv_shezhi"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/editview_setiing"
+                android:layout_marginRight="@dimen/qb_px_10"
+                android:layout_marginLeft="@dimen/qb_px_10"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:layout_height="@dimen/qb_px_50">
+                <ImageView
+                    android:layout_width="@dimen/qb_px_35"
+                    android:layout_height="@dimen/qb_px_35"
+                    android:layout_marginTop="@dimen/qb_px_10"
+                    android:layout_marginLeft="@dimen/qb_px_15"
+                    android:src="@drawable/ic_feedback"
+                    />
+                <TextView
+                    android:id="@+id/tv_fankui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/qb_px_15"
+                    android:textColor="@color/color_text_white"
+                    android:layout_marginLeft="@dimen/qb_px_13"
+                    android:text="意见反馈"
+                    android:layout_marginTop="@dimen/qb_px_17"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/editview_setiing"
+                android:layout_marginRight="@dimen/qb_px_10"
+                android:layout_marginLeft="@dimen/qb_px_10"
+                android:layout_height="@dimen/qb_px_50">
+                <ImageView
+                    android:layout_width="@dimen/qb_px_35"
+                    android:layout_height="@dimen/qb_px_35"
+                    android:layout_marginTop="@dimen/qb_px_10"
+                    android:layout_marginLeft="@dimen/qb_px_13"
+                    android:src="@drawable/ic_cache_clean"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/qb_px_15"
+                    android:textColor="@color/color_text_white"
+                    android:layout_marginLeft="@dimen/qb_px_15"
+                    android:text="清除缓存"
+                    android:layout_marginTop="@dimen/qb_px_17"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/blibli" />
+            <option value="$PROJECT_DIR$/byebur" />
+            <option value="$PROJECT_DIR$/dp_shipei" />
+            <option value="$PROJECT_DIR$/px_shipei" />
+            <option value="$PROJECT_DIR$/query_student" />
+            <option value="$PROJECT_DIR$/upload_more" />
+            <option value="$PROJECT_DIR$/windqq" />
+            <option value="$PROJECT_DIR$/yasuo_xm" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

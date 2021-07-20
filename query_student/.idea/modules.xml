@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blibli/blibli.iml" filepath="$PROJECT_DIR$/../blibli/blibli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../byebur/byebur.iml" filepath="$PROJECT_DIR$/../byebur/byebur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dp_shipei/dp_shipei.iml" filepath="$PROJECT_DIR$/../dp_shipei/dp_shipei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../px_shipei/px_shipei.iml" filepath="$PROJECT_DIR$/../px_shipei/px_shipei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/query_student.iml" filepath="$PROJECT_DIR$/query_student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../upload_more/upload_more.iml" filepath="$PROJECT_DIR$/../upload_more/upload_more.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wanandroid.iml" filepath="$PROJECT_DIR$/../wanandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yasuo_xm/yasuo_xm.iml" filepath="$PROJECT_DIR$/../yasuo_xm/yasuo_xm.iml" />
+    </modules>
+  </component>
+</project>

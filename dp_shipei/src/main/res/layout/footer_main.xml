@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:background="?attr/colorPrimary"
+    app:layout_behavior="com.example.dp_shipei.util.FooterBehavior">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/white"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@drawable/select_textcolor"
+        app:itemIconTint="@drawable/select_textcolor"
+        app:menu="@menu/nav_menu"/>
+</LinearLayout>

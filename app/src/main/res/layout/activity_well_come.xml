@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/sp_bg"
+        android:src="@mipmap/icon_wan_android"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/sp_jump_btn"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_splash_shape"
+        android:layout_width="@dimen/qb_px_60"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/qb_px_20"
+        android:layout_marginTop="@dimen/qb_px_20"/>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vivi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_toolbar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_toolbar"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/common_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/back_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="40px"
+                android:src="@drawable/back_n" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/common_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:text="设备管理"
+            android:textColor="@color/white"
+             android:textSize="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_about"
+            android:layout_width="@dimen/qb_px_30"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_10"
+            android:visibility="gone"
+            android:src="@drawable/iv_user"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_friend"
+            android:layout_width="@dimen/qb_px_20"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_10"
+            android:src="@drawable/add_friend"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

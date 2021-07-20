@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_huyan_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_55"
+                android:background="@drawable/blue_gradient_bg"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="false"
+                app:layout_behavior="@string/bye_burger_title_behavior">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/qb_px_115"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textColor="@color/colorhomeWhite"
+                    android:textSize="17.5sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_usage"
+                        android:layout_width="@dimen/qb_px_28"
+                        android:layout_height="@dimen/qb_px_28"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/qb_px_60"
+                        android:src="@drawable/ic_usage" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="@dimen/qb_px_28"
+                        android:layout_height="@dimen/qb_px_28"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/qb_px_15"
+                        android:src="@drawable/ic_search_white_24dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <com.example.wanandroid.ui.fragment.ScrollableViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/bg_white" />
+        </RelativeLayout>
+        <!--侧滑菜单-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header"
+            app:itemIconTint="@color/selector_drawer_txt"
+            app:itemTextColor="@color/selector_drawer_txt"
+            app:menu="@menu/mymenu" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/qb_px_58"
+        android:layout_height="@dimen/qb_px_57"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/qb_px_16"
+        android:layout_marginBottom="@dimen/qb_px_66"
+        android:backgroundTint="@color/colorGreen"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_up_arrow"
+        app:layout_behavior="@string/bye_burger_float_behavior"
+        app:pressedTranslationZ="@dimen/qb_px_12" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fitsSystemWindows="true"
+        app:itemBackground="@color/colorWhite_bnv"
+        app:itemIconTint="@drawable/select_textcolor"
+        app:itemTextColor="@drawable/select_textcolor"
+        app:labelVisibilityMode="labeled"
+        app:layout_behavior="@string/bye_burger_bottom_behavior"
+        app:menu="@menu/nav_menu" />
+</android.support.design.widget.CoordinatorLayout>

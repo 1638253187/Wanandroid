@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawer"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_55"
+                android:background="@drawable/blue_gradient_bg">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/qb_px_100"
+                    android:textSize="17.5sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="首页"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_usage"
+                        android:layout_width="@dimen/qb_px_28"
+                        android:layout_height="@dimen/qb_px_28"
+                        android:src="@drawable/ic_usage"
+                        android:layout_marginRight="@dimen/qb_px_60"
+                        android:layout_alignParentRight="true"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="@dimen/qb_px_28"
+                        android:layout_height="@dimen/qb_px_28"
+                        android:src="@drawable/ic_search_white_24dp"
+                        android:layout_marginRight="@dimen/qb_px_15"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <com.example.wanandroid.ui.fragment.ScrollableViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bnv"
+                android:layout_below="@+id/toolbar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="@dimen/qb_px_58"
+                android:layout_height="@dimen/qb_px_57"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/qb_px_16"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="@dimen/qb_px_66"
+                app:elevation="6dp"
+                android:src="@mipmap/icon_up_arrow"
+                app:pressedTranslationZ="@dimen/qb_px_12"
+                android:backgroundTint="@color/colorGreen"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true" />
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bnv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@android:color/white"
+                app:labelVisibilityMode="labeled"
+                app:itemTextColor="@drawable/select_textcolor"
+                app:itemIconTint="@drawable/select_textcolor"
+                app:menu="@menu/nav_menu"/>
+        </RelativeLayout>
+        <!--侧滑菜单-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header"
+            app:itemIconTint="@color/selector_drawer_txt"
+            app:itemTextColor="@color/selector_drawer_txt"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:menu="@menu/mymenu" />
+    </android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>

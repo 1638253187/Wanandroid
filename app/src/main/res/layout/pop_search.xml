@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_620"
+    android:layout_marginLeft="@dimen/qb_px_15"
+    android:layout_marginRight="@dimen/qb_px_15"
+    android:orientation="vertical"
+    android:padding="@dimen/qb_px_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_60"
+        android:background="@drawable/editview_yuanjiao">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/qb_px_30"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/qb_px_12"
+            android:src="@drawable/ic_back" />
+        <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="@dimen/qb_px_25"-->
+        <!--android:layout_height="@dimen/qb_px_25"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="@dimen/qb_px_70"-->
+        <!--android:layout_marginBottom="@dimen/qb_px_5"-->
+        <!--android:layout_marginTop="@dimen/qb_px_10"-->
+        <!--android:background="@drawable/ic_search" />-->
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="@dimen/qb_px_230"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/qb_px_8"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/editview_search"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:textColorHint="@color/colorBlack"
+            android:drawablePadding="@dimen/qb_px_4"
+            android:hint="发现更多干货" />
+
+        <Button
+            android:id="@+id/btn_sphar"
+            android:layout_width="@dimen/qb_px_65"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/qb_px_8"
+            android:layout_marginBottom="@dimen/qb_px_5"
+            android:layout_toRightOf="@+id/et_search"
+            android:background="@drawable/editview"
+            android:text="搜索"
+            android:textColor="@color/colorWhite_touch" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite_touch"
+        android:text="＿_＿_＿_＿____＿___＿_＿__＿_＿___＿__＿＿__＿__＿_＿___＿＿＿__＿＿_＿_＿_＿_＿＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿＿_＿_＿_＿_＿＿_＿_＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+        android:textColor="@color/colorGlayw"
+        android:textSize="@dimen/qb_px_4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_675"
+        android:background="@drawable/editview_yuanjiao_two">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qb_px_13"
+                android:layout_marginTop="@dimen/qb_px_5"
+                android:text="热搜"
+                android:textColor="@color/colororj"
+                android:textSize="20sp" />
+
+            <com.example.wanandroid.util.viewpagerutil.FlowLayout
+                android:id="@+id/liushi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhiteF1FAE8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_10"
+                android:layout_marginBottom="@dimen/qb_px_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_10"
+                    android:text="搜索历史"
+                    android:layout_marginLeft="@dimen/qb_px_13"
+                    android:textColor="@color/colororj"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/qb_px_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/qb_px_50"
+                    android:src="@drawable/ic_clear_all_gone" />
+
+                <TextView
+                    android:id="@+id/tv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/qb_px_10"
+                    android:layout_marginRight="@dimen/qb_px_15"
+                    android:text="清空"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.example.wanandroid.util.viewpagerutil.FlowLayout
+                android:id="@+id/liushi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhiteF1FAE8" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

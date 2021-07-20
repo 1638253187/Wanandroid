@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tokiii:reveal-banner:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eac82701e3a10699550e14d2453015a1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eac82701e3a10699550e14d2453015a1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tokiii/reveal-banner/1.0.0/82264a53c528485a9475aebc65d99a3ad3f39893/reveal-banner-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

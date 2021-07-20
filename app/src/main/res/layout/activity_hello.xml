@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+    android:background="@mipmap/icon_wan_android"
+tools:context=".ui.activity.Hello">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/qb_px_160"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/qb_px_10"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号"
+            android:textColorHint="@color/colorGlayw" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/visible"
+        android:layout_width="@dimen/qb_px_20"
+        android:layout_height="@dimen/qb_px_20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:background="@drawable/closeeis"
+       />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:layout_marginBottom="@dimen/qb_px_20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginRight="@dimen/qb_px_14"
+            android:layout_marginLeft="@dimen/qb_px_20"
+            android:hint="请输入密码"
+            android:textColorHint="@color/colorGlayw" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/load"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/body2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/login" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_top"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="@dimen/qb_px_90"
+            android:text="忘记密码"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="@dimen/qb_px_232"
+            android:text="用户注册"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:layout_gravity="center"
+
+        android:layout_below="@+id/text_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/qb_px_90"
+            android:text="登陆后代表阅读并同意" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:textColor="@color/colorBlue"
+            android:layout_toRightOf="@+id/agree"
+            android:text="服务条款"/>
+
+    </RelativeLayout>
+</LinearLayout>

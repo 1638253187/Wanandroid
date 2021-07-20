@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.LXRFragment">
+
+   <RelativeLayout
+       android:id="@+id/re_three"
+       android:layout_width="match_parent"
+       android:layout_margin="20dp"
+       android:background="@drawable/editview"
+       android:layout_height="35dp">
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="23dp"
+       android:layout_marginTop="7dp"
+       android:layout_height="23dp"
+       android:layout_marginLeft="122dp"
+       android:background="@mipmap/skin_searchbar_icon_theme_version2" />
+   <EditText
+       android:id="@+id/et_shou"
+       android:layout_width="match_parent"
+       android:background="@null"
+       android:hint="搜索"
+       android:paddingLeft="@dimen/qb_px_10"
+       android:gravity="center"
+       android:layout_height="35dp" />
+   </RelativeLayout>
+   <ExpandableListView
+       android:id="@+id/ex_view"
+       android:layout_below="@+id/re_three"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</RelativeLayout>

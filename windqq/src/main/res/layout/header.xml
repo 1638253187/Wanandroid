@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_marginTop="@dimen/qb_px_20">
+
+    <ImageView
+        android:id="@+id/daka"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/daka" />
+
+    <TextView
+        android:id="@+id/tv_da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/daka"
+        android:gravity="center"
+        android:text="999天"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/daren"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_da"
+        android:src="@mipmap/daren" />
+
+    <ImageView
+        android:id="@+id/zdh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/daren"
+        android:background="@drawable/anims" />
+
+    <ImageView
+        android:id="@+id/iv_hedaer"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="14dp"
+        android:src="@mipmap/bahb" />
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/lp" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="26sp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/iv_user"
+        android:text="0.20%"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv_user"
+        android:src="@mipmap/vib" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/iv_users_zhuan"
+        android:src="@mipmap/hnj" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/iv_users_zhuan1"
+        android:src="@mipmap/fpa" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/iv_users_zhuan2"
+        android:src="@mipmap/foy" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/iv_users_zhuan3"
+        android:src="@mipmap/fpt" />
+
+    <ImageView
+        android:id="@+id/iv_users_zhuan5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_marginLeft="-19dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/iv_users_zhuan4"
+        android:src="@mipmap/fpk" />
+
+    <ImageView
+        android:id="@+id/iv_erwei"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daka"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="18dp"
+        android:src="@mipmap/erwei" />
+
+    <ImageView
+        android:id="@+id/iv_users1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/fly" />
+    <!--<TextView-->
+    <!--android:id="@+id/tv_qianming"-->
+    <!--android:layout_below="@+id/tv_user"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_marginLeft="96dp"-->
+    <!--android:layout_marginTop="9dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textColor="@color/colorGray"-->
+    <!--android:text="  焦凤航的小可爱。"-->
+    <!--/>-->
+    <EditText
+        android:id="@+id/et_qianming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user"
+        android:layout_marginLeft="96.5dp"
+        android:layout_marginTop="9dp"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="15"
+        android:text="  焦凤航的小可爱。"
+        android:textColor="@color/colorGray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/editviews"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_crea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:padding="3dp"
+            android:src="@mipmap/sheying" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/iv_crea"
+            android:text="拍摄我的状态"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

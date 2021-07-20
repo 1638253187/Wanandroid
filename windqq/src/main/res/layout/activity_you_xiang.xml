@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".activity.YouXiang">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:outlineSpotShadowColor="@color/colorBlack"
+                    android:src="@mipmap/iav" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-5dp"
+                    android:text="返回"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="center"
+                    android:text="我的消息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="5dp"
+                    android:text="今日份儿: 想你想你再想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，我更爱你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="07-01"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user_one"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user_one"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_one"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_one"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="今日份儿的事儿: 想你想你想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao_one"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，炒鸡想你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="07-30"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user_three"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user_three"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_three"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_three"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="想你想你想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao_three"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，炒鸡想你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:text="06-29"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user_fow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name_fow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user_fow"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao_fow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_fow"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_fow"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="想你想你想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao_fow"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl_fow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，炒鸡想你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:text="06-28"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user_five"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user_five"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_five"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_five"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="想你想你想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao_five"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，炒鸡想你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:text="06-27"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_user_six"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/wd" />
+
+                <TextView
+                    android:id="@+id/tv_name_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/iv_user_six"
+                    android:text="你老公"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_siliao_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_six"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_six"
+                    android:background="@color/colorGray"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="想你想你想你" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_siliao_six"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pl_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@color/colorGray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="我的评论:老公，炒鸡想你" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:text="06-26"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="＿_＿_＿_＿＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿_＿＿＿＿＿__＿＿＿＿＿＿_＿＿＿＿＿＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_＿_"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="1sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

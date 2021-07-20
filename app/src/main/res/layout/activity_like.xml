@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.Like">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_55"
+        android:background="@color/colorWhite"
+        app:layout_behavior="@string/bye_burger_title_behavior">
+
+        <com.example.wanandroid.util.imageutil.CircleImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/qb_px_35"
+            android:layout_height="@dimen/qb_px_35"
+            android:background="@drawable/touch_bg"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_115"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/colorhomeWhite"
+            android:textSize="17.5sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.wikikii.bannerlib.banner.view.BannerBgContainer
+        android:id="@+id/banner_bg_container"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+
+    <com.wikikii.bannerlib.banner.LoopLayout
+        android:id="@+id/loop_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/qb_px_80"
+        android:layout_height="168dp"
+      />
+    </RelativeLayout>
+
+</LinearLayout>

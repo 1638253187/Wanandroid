@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/qb_px_5"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/my" />
+
+        <TextView
+            android:id="@+id/chat_item_content_text"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/qb_px_5"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_icon"
+            android:background="@drawable/message_text_send"
+            android:layout_marginTop="@dimen/qb_px_8"
+            android:text="你好"
+            android:textIsSelectable="true"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            >
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

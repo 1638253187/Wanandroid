@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.windqq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".app.QQApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/qqnews"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/qqnews"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WoDe"></activity>
+        <activity android:name=".activity.YouXiang" />
+        <activity android:name=".activity.LiuLiang" />
+        <activity android:name=".activity.WenJian" />
+        <activity android:name=".activity.XiangCe" />
+        <activity android:name=".activity.ShouChang" />
+        <activity android:name=".activity.Tv_zhu" />
+        <activity android:name=".activity.Tv_User" />
+        <activity android:name=".activity.ErWei" />
+        <activity android:name=".activity.User" />
+        <activity android:name=".activity.ZhuangBan" />
+        <activity android:name=".activity.QianBao" />
+        <activity android:name=".activity.HuiYuan" />
+        <activity android:name=".activity.Welle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Hollo" />
+
+
+        <activity
+            android:name=".activity.AudiosActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+
+    </application>
+
+
+
+</manifest>

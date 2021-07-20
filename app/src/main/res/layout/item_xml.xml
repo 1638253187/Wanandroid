@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/qb_px_20"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="@dimen/qb_px_5"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/touch_bg"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_10">
+
+        <ImageView
+            android:id="@+id/iv_envelopePic"
+            android:layout_width="@dimen/qb_px_120"
+            android:layout_height="@dimen/qb_px_150"
+            android:src="@mipmap/icon_register_bg" />
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/qb_px_24"
+            android:layout_height="@dimen/qb_px_24"
+            android:layout_marginLeft="@dimen/qb_px_15"
+            android:layout_toRightOf="@+id/iv_envelopePic"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_6"
+            android:layout_toRightOf="@+id/iv_user"
+            android:lines="1"
+            android:text="项目从零到一一第我单位我挖到一 "
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/qb_px_14"
+            android:layout_marginTop="@dimen/qb_px_16"
+            android:layout_toRightOf="@+id/iv_envelopePic"
+            android:text="Android jetpack+Mvvm构建的项目"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_niceDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginLeft="@dimen/qb_px_14"
+            android:layout_marginTop="@dimen/qb_px_30"
+            android:layout_toRightOf="@id/iv_envelopePic"
+            android:text="2019-07-23"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginLeft="@dimen/qb_px_5"
+            android:layout_marginTop="@dimen/qb_px_30"
+            android:layout_toRightOf="@+id/tv_niceDate"
+            android:text="mCyp"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
